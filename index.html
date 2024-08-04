@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        body{
+            font-family:  'Sono', sans-serif;
+        }
+        .main-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 2rem;
+        
+        }
+        .card{
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            min-width: 400px;
+        }
+
+        .title{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+
+        }
+        .price{
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .features{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        
+        }
+        .feature,li{
+            margin: 20px;
+        }
+        .plan-button{
+            padding: 10px;
+            background-color: #ff6600;
+            border-radius: 5px;
+            border: none;
+            color: #f2f2f2;
+        }
+        @media (max-width:1250px) {
+            .main-container{
+                flex-direction: column;
+                height: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="card">
+            <div class="title">Basic</div>
+            <div class="price">$11.99/month</div>
+            <ul class="features">
+                <li>✅ 10GB Storage</li>
+                <li>✅ 1 User</li>
+                <li>🚫 Support</li>
+            </ul>
+                <button  class="plan-button">Sign Up</button>
+        </div>
+        <div class="card">
+            <div class="title">Standard</div>
+            <div class="price">$19.99/month</div>
+            <ul class="features">
+                <li>✅ 50GB Storage</li>
+                <li>✅ 5 Users</li>
+                <li>✅ Phone &amp; Email Support</li>
+              </ul>
+              <button class="plan-button">Sign-Up</button>
+            
+        </div>
+        <div class="card">
+            <div class="title">Premium</div>
+            <div class="price">$49.99/month</div>
+            <ul class="features">
+            <li>✅ 100GB Storage</li>
+            <li>✅ 10 Users</li>
+            <li>✅ 24/7 Support</li>
+              </ul>
+              <button class="plan-button">Sign-Up</button>
+            
+        </div>
+    </div>
+</body>
+</html>
